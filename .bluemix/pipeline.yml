@@ -3,7 +3,7 @@ stages:
 - name: Build Stage
   inputs:
   - type: git
-    branch: master
+    branch: developer
   triggers:
   - type: commit
   jobs:
@@ -21,10 +21,10 @@ stages:
   - name: Deploy to dev
     type: deployer
     target:
-       url: '${CF_TARGET_URL}'
-       organization: '${CF_ORGANIZATION}'
-       space: '${CF_SPACE}'
-       application: '${CF_APP}'
+      url: https://api.ng.bluemix.net
+      organization: anupam.bhattacharya@in.ibm.com
+      space: dev
+      application: FundTransferApp-anupamb-1530
     script: |-
       #!/bin/bash
       cf push "${CF_APP}"
