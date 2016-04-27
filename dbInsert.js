@@ -32,7 +32,7 @@ if(!creatingDocAction){
 var id='';
 
 db.insert({
-							dateTime: "abc"
+							dateTime: "2016/04/27 15:52:36"
 
 }, id, function(err, doc) {
 

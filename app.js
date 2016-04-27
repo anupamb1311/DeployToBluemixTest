@@ -500,7 +500,7 @@ app.get('/api/favorites', function(request, response) {
 				var docDesc = 'A sample Document';
 				db.insert({
 					name : docName,
-					value : 'A sample Document'
+					value : 'My sample Document'
 				}, '', function(err, doc) {
 					if(err) {
 						console.log(err);
